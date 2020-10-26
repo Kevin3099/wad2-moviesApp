@@ -23,9 +23,10 @@ const FilterControls = props => {
   const handleTextChange = e => {
     handleChange(e, "name", e.target.value)
   }
-  const handleGenreChange = e => {
-    handleChange(e, "genre", e.target.value)
-  };
+  const handleChange = (e, type, value) => {
+    e.preventDefault()
+    props.onUserInput(type, value)
+  }
 
   return (
       <div className="row bg-warning">
