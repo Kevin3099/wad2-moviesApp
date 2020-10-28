@@ -18,6 +18,10 @@ const FilterControls = props => {
   const handleTextChange = e => {
     handleChange(e, "name", e.target.value)
   }
+  const handleGenreChange = e => {
+    handleChange(e, "genre", e.target.value)
+  };
+
 
   return (
       <div className="row bg-warning">

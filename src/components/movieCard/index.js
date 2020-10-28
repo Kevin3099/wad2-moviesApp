@@ -5,8 +5,21 @@ import "../../globals/fontawesome";
 import { Link } from "react-router-dom";
 
 const MovieCard = props => {
+
+  const handleAddToFavorites = e => {
+    e.preventDefault()
+    props.buttonHandler(props.movie.id)  // new line
+  }
+
   return (
     <div className="col-sm-3">
+       <div className="card-footer">
+          <button type="button" className="btn w-100 btn-primary"
+                onClick={handleAddToFavorites}
+                >
+            Add to Favorites
+          </button>
+        </div>
       <div className="card  bg-white">
       <Link to={`/movies/${props.movie.id}`}>
     <img
