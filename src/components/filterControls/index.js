@@ -13,7 +13,7 @@ const FilterControls = props => {
 
   const handleChange = (e, type, value) => {
     e.preventDefault()
-    props.onUserInput(type, value)
+    props.onUserInput(type, value)   // NEW
   }
   const handleTextChange = e => {
     handleChange(e, "name", e.target.value)
@@ -21,7 +21,6 @@ const FilterControls = props => {
   const handleGenreChange = e => {
     handleChange(e, "genre", e.target.value)
   };
-
 
   return (
       <div className="row bg-warning">
@@ -47,4 +46,5 @@ const FilterControls = props => {
       </div>
   );
 }
+
 export default FilterControls;
