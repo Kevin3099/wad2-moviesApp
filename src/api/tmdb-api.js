@@ -21,7 +21,6 @@ export const getGenres = () => {
     .then(res => res.json())
     .then(json => json.genres);
 };
-
 export const getMovieReviews = id => {
   return fetch(
     `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${process.env.REACT_APP_TMDB_KEY}`
@@ -29,11 +28,10 @@ export const getMovieReviews = id => {
     .then(res => res.json())
     .then(json => json.results);
 };
-
-export const getUpcomingMovies = () => {
+export const getMovieUpcoming = id => {
   return fetch(
-    `https://api.themoviedb.org/3/movie/upcoming?api_key=0ecc88fa31e79f91ac2a069df3798095&language=en-US&include_adult=false&page=1`
+    `https://api.themoviedb.org/3/movie/${id}/upcoming?api_key=${process.env.REACT_APP_TMDB_KEY}`
   )
     .then(res => res.json())
-    .then(json => json.results);
+    .then(json => json.upcoming);
 };
