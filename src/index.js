@@ -5,7 +5,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import HomePage from "./pages/homePage";
 import MoviePage from './pages/movieDetailsPage'
 import FavoriteMoviesPage from './pages/favoritesMoviesPage'
-import UpcomingMoviesPage from './pages/upcomingMoviesPage'
+import UpcomingMoviesPage from './pages/UpcomingMoviesPage'
 import MovieReviewPage from "./pages/movieReviewPage";
 import SiteHeader from './components/siteHeader'
 import MoviesContextProvider from "./contexts/moviesContext";
@@ -20,7 +20,6 @@ const App = () => {
       <div className="container-fluid">
        <MoviesContextProvider>
        <GenresContextProvider>
-      {/* <UpcomingContextProvider> */}
         <Switch>
         <Route exact path="/reviews/form" component={AddMovieReviewPage} />
         <Route path="/reviews/:id" component={MovieReviewPage} />
@@ -30,7 +29,6 @@ const App = () => {
           <Route path="/" component={HomePage} />
           <Redirect from="*" to="/" />
         </Switch>
-        {/* </UpcomingContextProvider> */}
         </GenresContextProvider>
         </MoviesContextProvider>
       </div>
