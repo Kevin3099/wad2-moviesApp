@@ -21,6 +21,12 @@ const reducer = (state, action) => {
                 : m
             ),
         };
+    //  case "add-watchList":
+    //    return {
+    //      movies: state.movies.map((m) =>
+    //        m.id === action.payload.movie.id ? { ...m, watchList: true } : m
+     //     ),
+     //   };
     default:
       return state;
   }
@@ -34,6 +40,10 @@ const MoviesContextProvider = (props) => {
     dispatch({ type: "add-favorite", payload: { movie: state.movies[index] } });
   };
 
+  const addToWatchList = (movieId) => {
+    const index = state.movies.map((m) => m.id).indexOf(movieId);
+    dispatch({ type: "add-watchList", payload: { movie: state.movies[index] } });
+  };
   const addReview = (movie, review) => {
     dispatch({ type: "add-review", payload: { movie, review } });
   };
@@ -49,7 +59,9 @@ const MoviesContextProvider = (props) => {
       value={{
         movies: state.movies,
         favorites: state.favorites,
+        watchList: state.watchList,
         addToFavorites: addToFavorites,
+        addToWatchList: addToWatchList,
         addReview: addReview,
       }}
     >
