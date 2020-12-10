@@ -3,7 +3,8 @@ import MovieListPageTemplate from "../components/templateMovieListPage";
 import AddReviewButton from '../components/buttons/addReview'
 import {MoviesContext} from '../contexts/moviesContext'
 
-const FavoritesMoviesPage = props => {
+
+const WatchListMoviesPage = props => {
   const context = useContext(MoviesContext);
   const watchList = context.movies.filter( m => m.watchList )
   return (
@@ -15,4 +16,4 @@ const FavoritesMoviesPage = props => {
   );
 };
 
-export default FavoritesMoviesPage;
+export default WatchListMoviesPage;
