@@ -14,6 +14,7 @@ import SiteHeader from './components/siteHeader'
 import MoviesContextProvider from "./contexts/moviesContext";
 import GenresContextProvider from "./contexts/genresContext";
 import AddMovieReviewPage from './pages/addMovieReviewPage'
+//  import creditsPage from './pages/creditsPage';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route exact path="/movies/watchList" component={watchListMoviesPage}/>
           <Route exact path="/movies/toprated" component={TopRatedMovies} />
           <Route exact path="/movies/nowplaying" component={MoviesNowPlaying} />
+          {/* <Route exact path="/movies/credits" component={creditsPage}/> */}
           <Route path="/movies/:id" component={MoviePage} />
           <Route path="/" component={HomePage} />
           <Redirect from="*" to="/" />
