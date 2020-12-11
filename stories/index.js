@@ -11,8 +11,10 @@ import AddFavoriteButton from "../src/components/buttons/addToFavorites";
 import { MemoryRouter } from "react-router";
 import GenresContextProvider from "../src/contexts/genresContext";
 import { action } from "@storybook/addon-actions";
-import movieReview from "../src/components/movieReview";
-import movieReviews from "../src/components/movieReviews";
+import MovieReview from "../src/components/movieReview";
+import MovieReviews from "../src/components/movieReviews";
+import MovieCredits from "../src/components/movieCredits";
+import AddToFavoriteButton from "../src/components/buttons/addToFavorites";
 
 const sample = {
   adult: false,
@@ -154,3 +156,14 @@ storiesOf("Movie Details Page/MovieHeader", module)
     <MemoryRouter initialEntries={["/"]}>{story()}</MemoryRouter>
   ))
   .add("default", () => <MovieHeader movie={sample} />);
+
+  storiesOf("Movie Details Page/MovieCredits", module).add("default", () => (
+    <MovieCredits movie={sample} />
+  ));
+  storiesOf("Movie Details Page/MovieReview", module).add("default", () => (
+    <MovieReview review={sample} />
+  ));
+  storiesOf("Favorites/Add Favorites", module).add("default", () => (
+    <AddToFavoriteButton movie={sample} />
+  ));
+  
