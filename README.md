@@ -4,25 +4,32 @@ Name: Kevin Power
 
 ## Features.
 
-...... A bullet-point list of the ADDITIONAL user features you have implemented for the  Movies Fan app ......,
+A bullet-point list of the ADDITIONAL user features implemented for the  Movies Fan app,
  
- + Feature 1 - .... a statement of its purpose/objective ..... 
- + Feature 2 - .......
- + Feature 3 = ......
- + etc
- + etc
+ + Watch List Button -  Adds movie's to the watch list page
+ + Watch List Page - Page to display Watch list movies
+ + Top Rated Movies Page - A new page to display top rated movies
+ + Now Playing Movies Page - A new page to display Now Playing movies
+ + Added Upcoming Movies Page - A new page for Upcoming movies 
+ + Added Credits to movie details - Add credits to the movie details with a button to display them
+ + Added Story Book Support for Credits - Added Story Book for Credits
+ + Story Book for Movie Reviews - Added Movie Reviews Story book
+ + Story Book for Favorites - Added the favorites button to story book
 
 ## Setup requirements (If required).
 
-...... A brief explanation of any non-standard setup steps necessary to run your app/client locally (after cloning the repo) ........
+Download NPM package and run npm start to run the program.
 
 ## API Data Model.
 
-..... List the additional TMDB endpoints used in your assignment, e.g.
+Additional Endpoints used.
 
 + https://api.themoviedb.org/3/movie/${id} - get detailed information on a specific movie. 
 + https://api.themoviedb.org/3/genre/movie/list - get a list of movie genres
-+ .......
++ https://api.themoviedb.org/3/movie/${id}/credits - get movie credits
++ https://api.themoviedb.org/3/movie/now_playing - get list of now playing movies
++ https://api.themoviedb.org/3/movie/top_rated - get list of top rated movies
++ https://api.themoviedb.org/3/movie/upcoming - get list of upcoming movies
 
 ## App Design.
 
