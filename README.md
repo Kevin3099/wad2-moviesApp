@@ -34,43 +34,53 @@ Additional Endpoints used.
 ## App Design.
 
 ### Component catalogue (If required).
-
-....... Insert a screenshot from the Storybook UI, hi-light stories relating to new/modified components you developed - see example screenshot below] .......
-
+Example one's
 ![][stories]
+
+My StoryBook Components added.
 
 ### UI Design.
 
-...... Insert screenshots of the new/modified views you have added to the Movies Fan app. Include a caption for each one clearly stating its purpose and any user interaction it supports ........
-
 ![][movieDetail]
 >Shows detailed information on a movie. Clicking the 'Show Reviews' button will display extracts from critic reviews.
-
 ![][review]
 >Shows the full text for a movie review. 
+![][topRated]
+> Shows the top rated movies
+![][nowPlaying]
+> Shows the now playing movies
+![][upcoming]
+> Show Upcoming movies
+![][credits]
+> Show Credits
 
 ## Routing.
 
-...... Insert a list of the additional routes supported by your Movies Fan app. If relevant, specify which of the routes require authentication, i.e. protected/private.
-
-+ /movies/favorites (protected) - displays the user's favorite movies selection.
-+ /reviews/:id (public) - displays the full text of a movie review.
-+ etc.
-+ etc.
++ /reviews/form - Route to review form 
++ /reviews/:id/ - Specific movie reviews 
++ /movies/favorites - Favorites movie route
++ /movies/upcoming - Upcoming movie route
++ /movies/watchList - Watch List movie route
++ /movies/toprated - Top Rated movie route
++ /movies/nowplaying - Now Playing Movie Route
+ + /movies/:id - Movies ID route
 
 ### Data hyperlinking.
-
-.... Use screenshots to illustrate where data hyperlinking is present in your views - include captions.
 
 ![][cardLink]
 > Clicking a card causes the display of that movie's details.
 
 ![][reviewLink]
->Clicking the 'Full Review' for a review extract will display the full text of the review
+>Clicking the 'Full Review' for a review extract will display the full text of the review.
 
-## Independent learning (If relevant).
+![][creditsLink]
+> Clicking Credits shows the credits for the specific movie you are on.
 
-. . . . . Briefly mention each technologies/techniques used in your project codebase that were not covered in the lectures/labs. Provide source code filename references to support your assertions and include reference material links (articles/blogs).
+![][favoriteLink]
+> Clicking Favorites button links to favorites page.
+
+![][upcomingLink]
+> Clicking upcoming button links to upcoming page.
 
 ---------------------------------
 
@@ -79,4 +89,12 @@ Additional Endpoints used.
 [review]: ./public/review.png
 [reviewLink]: ./public/reviewLink.png
 [cardLink]: ./public/cardLink.png
+[creditsLink]: ./public/creditsLink.png
+[favoritesLink]: ./public/favoriteLink.png
+[upcomingLink]: ./public/upcomingLink.png
 [stories]: ./public/storybook.png
+[newStories]: ./public/newstorybook.png
+[topRated]: ./public/topRated.png
+[nowPlaying]: ./public/nowPlaying.png
+[upcoming]: ./public/upcoming.png
+[credits]: ./public/credits.png
