@@ -11,7 +11,7 @@ const MoviesNowPlaying = () => {
 
   return (
     <PageTemplate
-      title="New Movies!"
+      title="Now Playing Movies!"
       movies={nowplaying}  /* Changed */
       action={movie => <AddReviewButton movie={movie} />}
     />

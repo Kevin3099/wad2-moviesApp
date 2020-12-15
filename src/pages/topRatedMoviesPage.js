@@ -11,7 +11,7 @@ const TopRatedMovies = () => {
 
   return (
     <PageTemplate
-      title="New Movies!"
+      title="Top rated Movies!"
       movies={toprated}  /* Changed */
       action={movie => <AddReviewButton movie={movie} />}
     />
