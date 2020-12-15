@@ -90,11 +90,11 @@ My StoryBook Components added.
 [reviewLink]: ./public/reviewLink.png
 [cardLink]: ./public/cardLink.png
 [creditsLink]: ./public/creditsLink.png
-[favoritesLink]: ./public/favoriteLink.png
-[upcomingLink]: ./public/upcomingLink.png
+[favoritesLink]: ./public/TopBarLink.png
+[upcomingLink]: ./public/TopBarLink.png
 [stories]: ./public/storybook.png
-[newStories]: ./public/newstorybook.png
+[newStories]: ./public/newStoryBook.png
 [topRated]: ./public/topRated.png
 [nowPlaying]: ./public/nowPlaying.png
 [upcoming]: ./public/upcoming.png
-[credits]: ./public/credits.png
+[credits]: ./public/creditsLink.png
